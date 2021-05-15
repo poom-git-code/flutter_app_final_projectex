@@ -628,6 +628,7 @@ class _UpdateDeleteLocationTimelineState extends State<UpdateDeleteLocationTimel
       //อัปโหลดรูปรูปไปไว้ที่ storage ของ Firebase เพราะเราต้องการตำแหน่งรูปมาใช้เพื่อเก็บใน firestore
       //ชื่อรูป
       String imageName = Path.basename(_image.path);
+      FirebaseStorage.instance.refFromURL(widget.image).delete();
 
       //อัปโหลดรุปไปที่ storage ที่ firebase
       Reference ref =  FirebaseStorage.instance.ref().child('imageTimeline/' + imageName);
