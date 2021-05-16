@@ -618,6 +618,12 @@ class _InsertPlaceUIState extends State<InsertPlaceUI> {
                           else if (goWithCtrl.text.trim().length == 0) {
                             showWarningDialog('กรุณาใส่ชื่อคนที่ไปด้วย');
                           }
+                          else if (date == null) {
+                            showWarningDialog('กรุณาใส่วันที่ด้วย');
+                          }
+                          else if (time == null) {
+                            showWarningDialog('กรุณาใส่เวลาด้วย');
+                          }
                           else if (_image == null) {
                             showWarningDialog('กรุณาเลือกรูปด้วย');
                           }

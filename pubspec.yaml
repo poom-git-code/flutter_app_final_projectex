@@ -33,6 +33,8 @@ dependencies:
   firebase_storage: ^8.0.4
   image_picker: ^0.7.4
   intl: ^0.17.0
+  google_maps_flutter: ^2.0.4
+  location: ^4.1.1
 
 dev_dependencies:
   flutter_test:

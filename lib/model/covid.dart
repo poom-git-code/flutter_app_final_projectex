@@ -1,5 +1,5 @@
 class covid {
-  String id;
+//  String id;
   String image;
   String locationName;
   String date;
@@ -8,7 +8,7 @@ class covid {
 
   covid(
       {
-        this.id,
+//        this.id,
         this.image,
         this.locationName,
         this.date,
@@ -17,7 +17,7 @@ class covid {
       });
 
   covid.fromJson(Map<String, dynamic> json) {
-    id = json['id'];
+//    id = json['id'];
     image = json['image'];
     locationName = json['location_name'];
     date = json['date'];
@@ -27,7 +27,7 @@ class covid {
 
   Map<String, dynamic> toJson() {
     final Map<String, dynamic> data = new Map<String, dynamic>();
-    data['id'] = this.id;
+//    data['id'] = this.id;
     data['image'] = this.image;
     data['location_name'] = this.locationName;
     data['date'] = this.date;
