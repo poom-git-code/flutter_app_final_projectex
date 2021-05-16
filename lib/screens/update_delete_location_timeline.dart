@@ -638,7 +638,7 @@ class _UpdateDeleteLocationTimelineState extends State<UpdateDeleteLocationTimel
         String imgeUrl = await ref.getDownloadURL();
 
         //ทำการอัปโหลดที่อยู่ของรูปพร้อมกับข้อมูลอื่นๆ โดยจะเรียกใช้ api
-        bool resultInsertFriend = await apiUpdateLocation(
+        bool resultUpdateFriend = await apiUpdateLocation(
             widget.id,
             namelocationCtrl.text.trim(),
             goWithCtrl.text.trim(),
@@ -646,7 +646,7 @@ class _UpdateDeleteLocationTimelineState extends State<UpdateDeleteLocationTimel
             timeCtrl.text.trim(),
             imgeUrl
         );
-        if(resultInsertFriend == true)
+        if(resultUpdateFriend == true)
         {
           ShowResultUpdateDialog("บันทึกเการแก้ไขเรียบร้อยเเล้ว");
         }
