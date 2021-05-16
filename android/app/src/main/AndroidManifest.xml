@@ -5,8 +5,8 @@
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
    <application
-        android:label="flutter_app_final_projectex"
-        android:icon="@mipmap/ic_launcher">
+        android:label="CovidTimeLine"
+        android:icon="@mipmap/launcher_icon">
        <meta-data android:name="com.google.android.geo.API_KEY"
            android:value="AIzaSyD7WMfrv3MuqsJUmeWSmNjJgCwIzDEIziI"/>
         <activity
